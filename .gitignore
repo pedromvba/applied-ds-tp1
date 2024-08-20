@@ -1,5 +1,7 @@
 .env
 .venv
+.venv_bd
+.venv_basedados
 amostra.csv
 draft.ipynb
 roraima.csv
@@ -8,3 +10,5 @@ teste2.ipynb
 /docs/Bussiness Canvas.pptx
 notes
 .vscode
+/support
+.DS_Store

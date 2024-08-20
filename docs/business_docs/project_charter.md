@@ -97,6 +97,10 @@ Crie uma organização de diretórios que reflita as diferentes fases do ciclo d
 
 Project_Charter tb vai ser construído aos poucos, assim como o Bussiness Canvas
 
+POrque desses arquivos __init.py__ dentro das pastas? Precisa colocar?
+
+
+## Metas e Indicadores
 
 
 ## Falta
