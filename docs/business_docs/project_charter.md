@@ -94,24 +94,5 @@ Milestone: aplicação acessível e funcional via navegador web.
 
 ## Arquitetura
 
+Em desenvolvimento
 
-#### LINKS
-
-
-git hub: https://github.com/pedromvba/applied-ds-tp1/tree/main/docs
-
-https://storage.googleapis.com/basedosdados-website/pdf/bd_estatuto_social.pdf
-
-https://basedosdados.org/dataset/ff933265-8b61-4458-877a-173b3f38102b?table=75db9d44-42be-42c5-9fbc-7591f4dc8d5f
-
-
-https://medium.com/data-hackers/explorando-dados-do-sus-com-sql-e9c6cfc08cc2
-
-
-http://tabnet.datasus.gov.br/cgi/sih/qgdescr.htm
-
-
-http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/qiuf.def
-
-
-https://bvsms.saude.gov.br/bvs/publicacoes/07_0066_M.pdf

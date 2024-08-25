@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 
 app_name = 'Monitor da Saúde'
@@ -34,12 +35,48 @@ no suporte das justificativas das busca de seus objetivos, sejam eles votos, rec
 
 # Usefull Links
 st.subheader('Links Úteis')
-st.write('Inserir Links')
 
-# para o projeto, bem como fontes de inspiração
+st.write('''
+
+[Github do Projeto](https://github.com/pedromvba/applied-ds-tp1)
+
+[Dados do Projeto](https://drive.google.com/file/d/1sNKzhx4-ATKZ2tqLI8mPeVx1YYeMMoiv/view?usp=share_link).
+         
+[Inspiração para o Projeto - Medium](https://medium.com/data-hackers/explorando-dados-do-sus-com-sql-e9c6cfc08cc2)
+
+Contato do Desenvolvedor: pedromvba@gmail.com         
+         
+''')
 
 # Data Sample
+df = pd.read_csv('./data/02_processed/processed_data.csv')
+
 st.subheader('Amostra dos Dados')
-st.write('Inserir Sample')
+st.dataframe(df.head(10))
+
+# Data Dictionary
+st.subheader('Dicionário dos Dados')
+st.write('''
+
+         
+Quantidade de Procedimentos: quantidade de procedimentos realizados no atendimento
+
+Mês: mês de realização do atendimento
+
+Ano: ano de realização do atendimento
+
+Sigla UF : Estado no qual foi realizado o atendimento
+
+Valor Ato Profissional: valor do procedimento realizado
+
+Município Paciente: Município de domicílio do paciente
+
+Município Atendimento: Município no qual o paciente foi atendido
+
+Procedimento Principal: principal atendimento realizado
+
+''')
+
+
 
 
