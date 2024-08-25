@@ -10,6 +10,10 @@ Além disso, uma das realidades que acomete o povo brasileiro é a infraestrutur
 
 Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para o ano posterior, bem como indicar localidades nas quais há espaço para incremento/investimento em infraestrutura de saúde, o aplicativo criado apresenta de forma compreensível e prática tais informações para que sejam utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros, etc.
 
+## Business Canvas
+
+![Business Canvas](/docs/business_docs/imgs/business_canvas.jpg)
+
 ## Escopo
 
 O escopo do projeto compreenderá:
