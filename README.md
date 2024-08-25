@@ -12,5 +12,5 @@ pip unistall numpy
 
 pip install numpy==1.24.0
 
-
+intalacoa da biblioteca
 

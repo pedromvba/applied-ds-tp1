@@ -12,4 +12,4 @@ notes
 .vscode
 /support
 .DS_Store
-/app/data/
+/data

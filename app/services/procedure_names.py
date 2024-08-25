@@ -7,7 +7,7 @@ import tabula
 import pandas as pd
 
 #Prefeitura Municipal file path
-pdf_path = './app/data/raw/TABELA_NACIONAL_PROCEDIMENTOS.pdf'
+pdf_path = 'data/01_raw/TABELA_NACIONAL_PROCEDIMENTOS.pdf'
 
 #Reading pdf tables
 tables = tabula.read_pdf(pdf_path, pages='all', multiple_tables=False, relative_columns=True)
@@ -17,4 +17,4 @@ concat_table = pd.concat(tables, ignore_index=True)
 concat_table = concat_table[['CÓDIGO', 'PROCEDIMENTO']]
 
 #saving csv file
-concat_table.to_csv('./app/data/transformed/procedure_names.csv',index=False)
+concat_table.to_csv('data/01_raw/procedure_names.csv',index=False)
