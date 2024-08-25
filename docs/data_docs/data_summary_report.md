@@ -71,6 +71,8 @@ A criação do arquivo envolveu a execução do script procedure_names.py, em ./
 
 Os dados obtidos pela API da Base dos Dados traziam, assim como para o caso do procedimento, os dados em formato de código (*id_municipio_estabelecimento_aih e id_municipio_paciente*). Para realizar a conversão dos códigos para o nome das cidades, foi criado manualmente o arquivo cities.json, localizado em ./app/data/01_raw. O script responsável pelo mapeamento do nome das cidades foi o data_processing.py localizado em ./app/services.
 
+A criação do arquivo ocorreu utilizando o [site do datasus](http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/spabr.def) no qual é possível realizar a conversão dos códigos pelo nome das cidades.
+
 
 ## Processamento e Amostra dos Dados Processados
 
