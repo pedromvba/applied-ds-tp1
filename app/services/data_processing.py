@@ -31,7 +31,7 @@ mapping_df['municipio_atendimento'] = mapping_df['id_municipio_estabelecimento_a
 procedure_names = pd.read_csv('./data/01_raw/procedure_names.csv', dtype=str)
 procedure_dict = procedure_names.set_index('CÓDIGO')['PROCEDIMENTO'].to_dict() # creating a dictionaty for mapping
 
-mapping_df['procedimento'] = mapping_df['id_procedimento_principal'].map(procedure_dict) # mapping the procedimento
+mapping_df['procedimento_principal'] = mapping_df['id_procedimento_principal'].map(procedure_dict) # mapping the procedimento
 
 # dropping values that could't be identified
 processed_df = mapping_df.copy()

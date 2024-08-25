@@ -14,3 +14,8 @@ pip install numpy==1.24.0
 
 intalacoa da biblioteca
 
+colocar link do github
+
+colocar endereço dos dados e isntrução de que a pasta data deve ser colocada na raiz do projeto
+
+
