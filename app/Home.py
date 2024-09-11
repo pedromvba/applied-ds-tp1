@@ -9,7 +9,10 @@ app_name = 'Monitor da Saúde'
 # Basic Information
 st.title(f'{app_name}')
 
-st.subheader(f'Bem vindo ao {app_name}!')
+st.subheader(f'Bem vindo ao {app_name}! 🏥')
+
+st.image('images/Capa2.jpg')
+
 st.write(f'''O projeto {app_name} tem como objetivo identificar municípios com potencial 
          de investimento em infraestrutura de saúde, baseado, tanto no deslocamento dos cidadãos 
          em busca de atendimento do SUS quanto nos procedimentos realizados em cada localidade.''')
@@ -74,9 +77,8 @@ Município Paciente: Município de domicílio do paciente
 Município Atendimento: Município no qual o paciente foi atendido
 
 Procedimento Principal: principal atendimento realizado
+         
+
+         
 
 ''')
-
-
-
-

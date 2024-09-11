@@ -45,6 +45,6 @@ processed_df.drop(axis=1,
                   inplace=True)
 
 # saving processed data
-processed_df.to_csv('./data/02_processed/processed_data.csv', index=False)
+processed_df.to_csv('./data/02_processed/full_data.csv', index=False)
 
 print('Data Processing Done!')
