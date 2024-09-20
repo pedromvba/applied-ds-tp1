@@ -13,3 +13,4 @@ notes
 /support
 .DS_Store
 /data
+/app/services/__pycache__

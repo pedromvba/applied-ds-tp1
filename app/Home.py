@@ -50,35 +50,3 @@ st.write('''
 Contato do Desenvolvedor: pedromvba@gmail.com         
          
 ''')
-
-# Data Sample
-df = pd.read_csv('./data/02_processed/processed_data.csv')
-
-st.subheader('Amostra dos Dados')
-st.dataframe(df.head(10))
-
-# Data Dictionary
-st.subheader('Dicionário dos Dados')
-st.write('''
-
-         
-Quantidade de Procedimentos: quantidade de procedimentos realizados no atendimento
-
-Mês: mês de realização do atendimento
-
-Ano: ano de realização do atendimento
-
-Sigla UF : Estado no qual foi realizado o atendimento
-
-Valor Ato Profissional: valor do procedimento realizado
-
-Município Paciente: Município de domicílio do paciente
-
-Município Atendimento: Município no qual o paciente foi atendido
-
-Procedimento Principal: principal atendimento realizado
-         
-
-         
-
-''')

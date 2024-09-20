@@ -25,7 +25,7 @@ pip install basedosdados
 Conforme registrado, durante a instalação da biblioteca base dos dados, diversas outras são instaladas, como por exemplo pandas e numpy. Ocorre que identificou-se uma incompatibilidade com a versão do numpy instalado, sendo necessária a correção das mesma por meio da instalação de uma versão mais antiga: 
 
 ``` shell
-pip unistall numpy
+pip uninstall numpy
 pip install numpy==1.24.0
 ```
 

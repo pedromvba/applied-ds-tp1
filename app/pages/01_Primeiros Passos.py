@@ -1,22 +1,52 @@
 import streamlit as st
 import pandas as pd
-from services.different_cities import diff_cities
+from services.functions import *
 import time
 
 
+st.header('Introdução - Comece por Aqui 👋🏼')
 
-st.header ('Introdução - Comece por Aqui 👋🏼')
-
-st.subheader('Dados')
+st.subheader('Dados Embarcados na Solução')
 st.write('''
 
 Os dados foram obtidos diretamente da API da Base dos Dados. Essa API coleta e mantém dados de interesse
 público, como por exemplo, os da Saúde, diretamente de bases oficiais. Ou seja, no caso em análise,
 os dados oficiais de saúde foram coletados pela API da Base dos Dados diretamente do Datasus e posteriormente
-importados neste projeto.  
+importados neste projeto.''')
 
-Caso queira adicionar mais dados ao projeto, favor utilizar o botão abaixo e inserí-los em formato .csv,
-respeitando o seguinte schema:
+# Data Sample
+df = pd.read_csv('./data/02_processed/full_data.csv')
+
+st.write('#### Amostra dos Dados')
+st.dataframe(df.head(10))
+
+# Data Dictionary
+st.write('#### Dicionário dos Dados')
+st.write('''
+      
+Quantidade de Procedimentos: quantidade de procedimentos realizados no atendimento
+
+Mês: mês de realização do atendimento
+
+Ano: ano de realização do atendimento
+
+Sigla UF : Estado no qual foi realizado o atendimento
+
+Valor Ato Profissional: valor do procedimento realizado
+
+Município Paciente: Município de domicílio do paciente
+
+Município Atendimento: Município no qual o paciente foi atendido
+
+Procedimento Principal: principal atendimento realizado
+         
+''')  
+st.write('____')
+
+st.write('### Adicionar mais Dados')
+
+st.write('''Caso queira adicionar mais dados ao projeto, favor utilizar o botão abaixo inserindo um arquivo
+em formato .csv, respeitando o seguinte schema:
          
 
 | quantidade_procedimentos | mes | ano  | sigla_uf | valor_ato_profissional | municipio_paciente | municipio_atendimento | procedimento_principal|
