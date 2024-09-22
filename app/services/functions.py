@@ -9,14 +9,19 @@ import streamlit as st
 def read_data(file_path):
     return pd.read_csv(file_path)
 
+def convert_to_hours_minutes(total_seconds):
+    hours = total_seconds//3600 
+    minutes = (total_seconds%3600)//60 
+    return f"{hours} horas e {minutes} minutos"
+
 def diff_cities(df):
     different_cities = df[df['municipio_paciente']!= df['municipio_atendimento']]
     different_cities.to_csv('data/02_processed/different_cities.csv', index=False)
 
 def routes(origin, destination, api_key):
 
-    origin=origin+' RR'
-    destination=destination+' RR'
+    origin=origin+' Roraima Brasil'
+    destination=destination+' Roraima Brasil'
     url = f"https://www.google.com/maps/embed/v1/directions?key={api_key}&origin={origin}&destination={destination}"
 
     #iframe in streamlit
@@ -37,17 +42,18 @@ def city_tuples(diff_df):
     for origin_city in diff_df['municipio_paciente'].unique():
         for destination_city in diff_df['municipio_atendimento'].unique():
             if origin_city != destination_city:
-                city_pair = sorted([origin_city, destination_city]) # sorted bc A > B  = B > A
+                city_pair = sorted([origin_city, destination_city]) # sorted bc A to B  == B to A
                 if city_pair not in pairs:
                     pairs.append(city_pair)
-    return pairs
+    return pd.DataFrame(pairs, columns=['Cidade A', 'Cidade B'])
+    #return pairs
 
 
 def get_travel_time(api_key, origin, destination, mode='driving'):
     endpoint = 'https://maps.googleapis.com/maps/api/distancematrix/json'
     params = {
-        'origins': origin + ' RR Brasil',
-        'destinations': destination + ' RR Brasil',
+        'origins': origin + ' Roraima Brasil',
+        'destinations': destination + ' Roraima Brasil',
         'mode': mode,
         'key': api_key
     }

@@ -1,5 +1,5 @@
-import streamli as st
-import panda as pd
+import streamlit as st
+import pandas as pd
 from services.functions import *
 from services.plots import *
 
@@ -54,7 +54,7 @@ total_grouped_procedures = diff_cities.\
 
 top_procedures = total_grouped_procedures.sort_values('Contagem', ascending=False)
 
-st.dataframe(top_procedures)
+st.dataframe(top_procedures, hide_index=True)
 
 st.write('### Análise por Cidade')
 options = st.multiselect(
@@ -67,7 +67,7 @@ if options:
     .isin(options)]\
     .sort_values('Contagem', ascending=False)
     
-    st.dataframe(grouped_view)
+    st.dataframe(grouped_view, hide_index=True)
 
 st.write('### Identificação dos Municípios Mais Propensos ao Investimento')
 st.write('''
@@ -99,7 +99,8 @@ best_cities = city_grouped[['municipio_paciente', 'score']].sort_values('score',
 
 st.dataframe(best_cities, 
              width=500,
-             height=300)
+             height=300,
+             hide_index=True)
 
 
 st.write('### Exportar Informações')
@@ -115,4 +116,9 @@ st.download_button(label='Melhores Cidades Para Investimento',
 
 st.download_button(label='Procedimentos Mais Demandados',
                    data=top_procedures.to_csv(index=False),
+                   file_name='procedimentos_mais_demandados.csv')
+
+if options:
+    st.download_button(label='Procedimentos Mais Demandados dos Municípios Selecionado',
+                   data=grouped_view.to_csv(index=False),
                    file_name='procedimentos_mais_demandados.csv')

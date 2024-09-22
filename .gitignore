@@ -14,3 +14,4 @@ notes
 .DS_Store
 /data
 /app/services/__pycache__
+/app/pages/draft.py
