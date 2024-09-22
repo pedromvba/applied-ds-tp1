@@ -2,13 +2,25 @@
 
 ## Contexto Negocial, ODS e Público Alvo
 
-O sistema de saúde público no Brasil é bastante abrangente, tanto em termos de procedimentos que podem ser realizados gratuitamente quanto no espaço geográfico que ele deve cobrir, considerando as dimensões do Brasil. 
+O sistema de saúde público no Brasil é bastante abrangente, tanto em termos de procedimentos que podem 
+ser realizados gratuitamente quanto no espaço geográfico que ele deve cobrir, considerando as dimensões do Brasil. 
+Ao mesmo tempo, devido a essas características, bem como a definição na Constituição Nacional de que a saúde é
+direito do cidadão, o sistema de saúde brasileiro necessita de um bom planejamento de investimentos. Nesse sentido, 
+é importe que os gestores da saúde consigam ter uma visão resumida dos atendimentos realizados, bem como dos investimentos 
+despendidos, de forma a planejar as despesas nos anos posteriores.
 
-Ao mesmo tempo, devido a essas características, bem como a definição na Constituição Nacional de que a saúde é direito do cidadão, o sistema de saúde brasileiro necessita de um bom planejamento de investimentos. Nesse sentido, é importe que os gestores da saúde consigam ter uma visão resumida dos atendimentos realizados, bem como dos investimentos despendidos, de forma a planejar as despesas nos anos posteriores.
+Além disso, uma das realidades que acomete o povo brasileiro é a infraestrutura de saúde mais 
+simples longe das capitais, fazendo com que o público tenha que se deslocar grandes distâncias 
+para ser atendido nas capitais. 
 
-Além disso, uma das realidades que acomete o povo brasileiro é a infraestrutura de saúde mais simples longe das capitais, fazendo com que o público tenha que se deslocar grandes distâncias para ser atendido nas capitais. 
-
-Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para o ano posterior, bem como indicar localidades nas quais há espaço para incremento/investimento em infraestrutura de saúde, o aplicativo criado apresenta de forma compreensível e prática tais informações para que sejam utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros, etc.
+Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para o ano posterior, 
+bem como indicar localidades nas quais há espaço para incremento/investimento em infraestrutura de 
+saúde, o aplicativo criado apresenta de forma compreensível e prática tais informações para que sejam 
+utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde 
+no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros, etc.
+         
+Por fim, de forma a apoiar o cidadão, o aplicativo indica o Município mais próximo e com o melhor atendimento
+ao cidadão, de forma que em caso de deslocamento, esse seja mais efetivo.
 
 ## Business Canvas
 
@@ -24,11 +36,14 @@ O escopo do projeto compreenderá:
 
 * Identificação de regiões com potencial de investimento em infraestrutura de saúde, baseados no deslocamento dos cidadãos em busca de atendimento do SUS.
 
+* Indicação para o cidadão do Município mais próximo que lhe trará o melhor atendimento.
+
 * Front-End desenvolvido em Streamlit para comunicar os resultados.
 
 # Stakeholders
 
-* Prefeituras 
+* Prefeituras
+* Cidadãos 
 * Ministério da Saúde 
 * Datasus
 * Gestores Públicos da Saúde 

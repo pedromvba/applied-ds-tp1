@@ -4,6 +4,21 @@ from services.functions import *
 import time
 
 
+# applying the backgroud color saved in the session state
+background_color = st.session_state['backgroud_state']
+
+st.markdown(
+    f'''
+    <style>
+    [data-testid="stApp"] {{
+        background-color: {background_color}
+    }}
+    </style>
+    ''',
+    unsafe_allow_html=True)
+
+
+
 st.header('Introdução - Comece por Aqui 👋🏼')
 
 st.subheader('Dados Embarcados na Solução')
@@ -18,7 +33,7 @@ importados neste projeto.''')
 df = pd.read_csv('./data/02_processed/full_data.csv')
 
 st.write('#### Amostra dos Dados')
-st.dataframe(df.head(10))
+st.dataframe(df.head(10), hide_index=True)
 
 # Data Dictionary
 st.write('#### Dicionário dos Dados')

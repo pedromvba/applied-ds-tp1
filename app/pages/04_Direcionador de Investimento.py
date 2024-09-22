@@ -3,6 +3,20 @@ import pandas as pd
 from services.functions import *
 from services.plots import *
 
+# applying the backgroud color saved in the session state
+background_color = st.session_state['backgroud_state']
+
+st.markdown(
+    f'''
+    <style>
+    [data-testid="stApp"] {{
+        background-color: {background_color}
+    }}
+    </style>
+    ''',
+    unsafe_allow_html=True)
+
+
 FILE_PATH_DIFF = 'data/02_processed/different_cities.csv'
 FILE_PATH_BEST_CITIES = 'data/02_processed/best_cities.csv'
 diff_cities = read_data(FILE_PATH_DIFF)

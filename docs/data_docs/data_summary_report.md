@@ -6,6 +6,8 @@ Gerar modelo preditivo que consiga prever com base em dados históricos o númer
 
 Desenvolver painel com análise acerca das regiões com potencial de investimento em infraestrutura de saúde, baseados no deslocamento dos cidadãos em busca de atendimento do SUS.
 
+Indicar ao cidadão a localidade mais próxima com o melhor atendimento do SUS.
+
 ## Dados
 
 ### Base dos Dados (API)
@@ -73,6 +75,14 @@ Os dados obtidos pela API da Base dos Dados traziam, assim como para o caso do p
 
 A criação do arquivo ocorreu utilizando o [site do datasus](http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/spabr.def) no qual é possível realizar a conversão dos códigos pelo nome das cidades.
 
+
+### Tempo de Deslocamento e Distância
+
+Para o cálculo do tempo de deslocamento e da distância a ser percorrida, foi utilizada a API do Google - [Distance Matrix API](https://developers.google.com/maps/documentation/distance-matrix/overview?hl=pt-br). Essa API consegue nos retornar, dada uma origem e um destino, o tempo necessário para percorrer a rota, bem como a distância do melhor percurso.
+
+### Cálculo da Melhor Rota
+
+Para o cálculo da melhor rota e apresentação da mesma no aplicativo, foi utilizada a API do Google - [Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started?hl=pt-br)
 
 ## Processamento e Amostra dos Dados Processados
 

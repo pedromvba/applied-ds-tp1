@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 
 
+# Page Color
+
+# initializing session state to track file_state parameter shared between pages
+if 'file_state' not in st.session_state:
+    st.session_state['file_state'] = 0
+
+
 app_name = 'Monitor da Saúde'
 
 # Project Cover
@@ -15,7 +22,8 @@ st.image('images/Capa2.jpg')
 
 st.write(f'''O projeto {app_name} tem como objetivo identificar municípios com potencial 
          de investimento em infraestrutura de saúde, baseado, tanto no deslocamento dos cidadãos 
-         em busca de atendimento do SUS quanto nos procedimentos realizados em cada localidade.''')
+         em busca de atendimento do SUS quanto nos procedimentos realizados em cada localidade. 
+         Ainda, permite que cidadãos verifiquem o Município mais próximo com o melhor atendimento do SUS.''')
 
 st.write('''
 O sistema de saúde público no Brasil é bastante abrangente, tanto em termos de procedimentos que podem 
@@ -34,7 +42,34 @@ bem como indicar localidades nas quais há espaço para incremento/investimento 
 saúde, o aplicativo criado apresenta de forma compreensível e prática tais informações para que sejam 
 utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde 
 no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros, etc.
+         
+Por fim, de forma a apoiar o cidadão, o aplicativo indica o Município mais próximo e com o melhor atendimento
+ao cidadão, de forma que em caso de deslocamento, esse seja mais efetivo.
 ''')
+
+# creating backgroud color session state
+if 'backgroud_state' not in st.session_state:
+    st.session_state['backgroud_state'] = '#FFFFFF'
+
+#initializing with white and picking a new color
+background_color = st.color_picker(
+    label='Caso deseje alterar a cor do aplicativo para um maior conforto visual, escolha e aplique uma nova cor abaixo:',
+    value=st.session_state['backgroud_state'])
+
+#updating session state
+st.session_state['backgroud_state'] = background_color
+
+# applying the backgroud color
+st.markdown(
+    f'''
+    <style>
+    [data-testid="stApp"] {{
+        background-color: {st.session_state['backgroud_state']}
+    }}
+    </style>
+    ''',
+    unsafe_allow_html=True)
+
 
 # Usefull Links
 st.subheader('Links Úteis')
