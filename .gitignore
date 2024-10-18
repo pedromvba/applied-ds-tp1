@@ -15,3 +15,5 @@ notes
 /data
 /app/services/__pycache__
 /app/pages/draft.py
+__pycache__
+main.py
