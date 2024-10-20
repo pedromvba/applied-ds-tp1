@@ -13,11 +13,10 @@ Além disso, uma das realidades que acomete o povo brasileiro é a infraestrutur
 simples longe das capitais, fazendo com que o público tenha que se deslocar grandes distâncias 
 para ser atendido nas capitais. 
 
-Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para o ano posterior, 
-bem como indicar localidades nas quais há espaço para incremento/investimento em infraestrutura de 
-saúde, o aplicativo criado apresenta de forma compreensível e prática tais informações para que sejam 
+Assim, de forma a subsidiar o planejamento de gestores dos Ministério da Saúde para os anos posteriores, indicando localidades nas quais há espaço para incremento/investimento em infraestrutura de 
+saúde, o aplicativo criado apresenta de forma compreensível e prática informações relativas a atendimentos do SUS para que sejam 
 utilizada por Prefeituras, parlamentares/candidatos, ONGs e Empresários do Setor da Saúde 
-no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros, etc.
+no suporte das justificativas das busca de seus objetivos, sejam eles votos, recursos financeiros ou investimentos no setor etc.
          
 Por fim, de forma a apoiar o cidadão, o aplicativo indica o Município mais próximo e com o melhor atendimento
 ao cidadão, de forma que em caso de deslocamento, esse seja mais efetivo.
@@ -32,13 +31,15 @@ O escopo do projeto compreenderá:
 
 * Análise dos dados de atendimento do SUS para o Estado de Roraima (RR); 
 
-* Modelo de regressão linear para prever com base em dados históricos o número de atendimentos previsto para o próximo ano, bem como o custo previsto.
-
 * Identificação de regiões com potencial de investimento em infraestrutura de saúde, baseados no deslocamento dos cidadãos em busca de atendimento do SUS.
 
 * Indicação para o cidadão do Município mais próximo que lhe trará o melhor atendimento.
 
 * Front-End desenvolvido em Streamlit para comunicar os resultados.
+
+* API para permitir que sistemas consultem as funcionalidades da aplicação:
+  * Melhores cidades para investimento
+  * Melhor cidade para atendimento do cidadão
 
 # Stakeholders
 
@@ -82,13 +83,10 @@ Milestones: Aplicação demo com:
 
 ### 3. Modelagem
 
-Seleção, extração de atributos e treinamento do modelo.
-
-Milestones: 
-
-* Modelo preditivo que consiga prever com base em dados históricos o número de atendimentos previsto para o próximo ano, bem como o custo previsto.
+Seleção, extração de atributos e front-end de comunicação.
 
 * Desenvolvimento de painel com análise acerca das regiões com potencial de investimento em infraestrutura de saúde, baseados no deslocamento dos cidadãos em busca de atendimento do SUS.
+* Desenvolvimento de painel com indicativo de melhor cidade para atendimento, bem como melhor rota e tempo de deslocamento até o atendimento.
 
 ### 4. Avaliação
 

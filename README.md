@@ -47,6 +47,30 @@ A Google fornece 1 TB gratuito por mês de uso do BigQuery para cada projeto que
 
 Após a instalação da biblioteca Base dos dados, foi necessária a instalação do Streamlit e da biblioteca tabula-py, chegando assim ao requirements.txt atual.
 
+## Endpoints do Projeto
+
+O projeto disponibiliza 2 endpoints com 2 métodos GET de forma a permitir que as funcionalidades do aplicativo que são apresentadas em front-end via Streamlit também possam ser acessadas via APIs. Sendo assim, temos:
+
+* /atendimento-proximo:  
+    * Método: GET
+    * Funcionalidade: retornar a cidade mais recomendada para o atendimento mais próximo, bem como o tempo de deslocamento
+    * Exemplo:  
+
+    ```python
+    {"atendimento":"Pacaraima","tempo_viagem":"2 horas e 35 minutos"}
+    ```
+
+* /direcionador-investimento:
+
+    * Método: GET
+    * Funcionalidade: retornar lista das cidade mais recomendadas para investimentos na área de saúde
+    * Exemplo:  
+
+    ```python
+    [{"Municipio":"Alto Alegre","Score de Investimento":10.0},{"Municipio":"Pacaraima","Score de Investimento":9.224423429851136},{"Municipio":"Canta","Score de Investimento":5.2985470231364244},{"Municipio":"Amajari","Score de Investimento":5.121742731501089}]
+    ```
+
+
 ## Github do Projeto
 
 [Link do Projeto](https://github.com/pedromvba/applied-ds-tp1)
