@@ -2,8 +2,6 @@ import pandas as pd
 import requests
 import streamlit as st
 
-############# ORGANIZAR ESSSAS FUNCOES
-
 
 @st.cache_data
 def read_data(file_path):

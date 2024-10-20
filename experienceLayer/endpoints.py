@@ -1,8 +1,7 @@
 import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from app.services.functions import *
-from app.services.plots import *
+from processLayer.services.processing_functions import *
 
 
 # importing environment variables and creating others

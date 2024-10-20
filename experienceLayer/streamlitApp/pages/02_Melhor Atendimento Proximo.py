@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
-from services.functions import *
+from processLayer.services.processing_functions import *
 from services.plots import *
 
 

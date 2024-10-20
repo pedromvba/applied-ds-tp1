@@ -17,3 +17,7 @@ notes
 /app/pages/draft.py
 __pycache__
 main.py
+RECADO PARA O PROFESSOR.txt
+/notebooks
+*__pycache__
+*__init__.py
