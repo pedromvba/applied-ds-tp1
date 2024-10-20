@@ -70,7 +70,6 @@ O projeto disponibiliza 2 endpoints com 2 métodos GET de forma a permitir que a
     [{"Municipio":"Alto Alegre","Score de Investimento":10.0},{"Municipio":"Pacaraima","Score de Investimento":9.224423429851136},{"Municipio":"Canta","Score de Investimento":5.2985470231364244},{"Municipio":"Amajari","Score de Investimento":5.121742731501089}]
     ```
 
-
 ## Github do Projeto
 
 [Link do Projeto](https://github.com/pedromvba/applied-ds-tp1)
