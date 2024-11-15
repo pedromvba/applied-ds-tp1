@@ -21,3 +21,4 @@ RECADO PARA O PROFESSOR.txt
 /notebooks
 *__pycache__
 *__init__.py
+.venv2
