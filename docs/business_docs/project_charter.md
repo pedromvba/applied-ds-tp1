@@ -41,6 +41,8 @@ O escopo do projeto compreenderá:
   * Melhores cidades para investimento
   * Melhor cidade para atendimento do cidadão
 
+* Indicador de Localidade de Atendimento baseado no procedimento desejado pelo cidadão
+
 # Stakeholders
 
 * Prefeituras
@@ -108,8 +110,4 @@ Milestone: aplicação acessível e funcional via navegador web.
 
   * Meta: 1 Prefeitura,  2 Parlamentares/Candidatos, 1 Empresário
 
-
-## Arquitetura
-
-Em desenvolvimento
 
